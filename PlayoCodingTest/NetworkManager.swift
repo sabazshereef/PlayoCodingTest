@@ -11,7 +11,7 @@ import Foundation
 final class NetworkManager {
     
     static let shared = NetworkManager()
-   
+    
     enum errors : Error {
         case InvalidUrl
         case NoData
@@ -25,7 +25,7 @@ final class NetworkManager {
             completion(.failure(errors.InvalidUrl))
             return
         }
-    
+        
         let dataTask = URLSession.shared.dataTask(with: url) { data,_,error in
             guard let jsonData = data else{
                 completion(.failure(errors.NoData))
@@ -42,8 +42,8 @@ final class NetworkManager {
             }
         };
         dataTask.resume()
-
-       
+        
+        
         
     }
 }

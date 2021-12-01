@@ -146,11 +146,11 @@
 				417EBF5627561BF60085ABA7 /* AppDelegate.swift */,
 				417EBF8B27561E360085ABA7 /* NetworkManager.swift */,
 				41C39114275735AF0018BF60 /* extensions.swift */,
+				41C3911A275750220018BF60 /* Constants.swift */,
 				417EBF8627561D790085ABA7 /* Headlines */,
 				417EBF5F27561BFA0085ABA7 /* Assets.xcassets */,
 				417EBF6127561BFA0085ABA7 /* LaunchScreen.storyboard */,
 				417EBF6427561BFA0085ABA7 /* Info.plist */,
-				41C3911A275750220018BF60 /* Constants.swift */,
 			);
 			path = PlayoCodingTest;
 			sourceTree = "<group>";

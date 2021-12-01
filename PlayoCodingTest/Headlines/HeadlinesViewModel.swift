@@ -20,8 +20,8 @@ class HeadlinesViewModel {
             case .success(let result):
                 self?.listOfHeadlines = result.articles
                 self?.reloadDataDelegate.refreshTable()
-            case .failure(_):
-                print("!error")
+            case .failure(let error):
+                print(error)
             }
         }
     }

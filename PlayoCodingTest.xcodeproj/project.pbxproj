@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FF369F43A77F05E4D8CC78E /* Pods_PlayoCodingTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE13374377AD8BB48C709CD /* Pods_PlayoCodingTest.framework */; };
+		4025B83EC1C4F63574C07B5B /* Pods_PlayoCodingTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B852DC122B5A274EF829174 /* Pods_PlayoCodingTestTests.framework */; };
 		417EBF5727561BF60085ABA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBF5627561BF60085ABA7 /* AppDelegate.swift */; };
 		417EBF5927561BF60085ABA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBF5827561BF60085ABA7 /* SceneDelegate.swift */; };
 		417EBF5B27561BF60085ABA7 /* HeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBF5A27561BF60085ABA7 /* HeadlinesViewController.swift */; };
@@ -20,6 +22,7 @@
 		417EBF8A27561DF40085ABA7 /* HeadlinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBF8927561DF40085ABA7 /* HeadlinesModel.swift */; };
 		417EBF8C27561E360085ABA7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBF8B27561E360085ABA7 /* NetworkManager.swift */; };
 		41C00332275638A9003D5715 /* HeadlinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C00331275638A9003D5715 /* HeadlinesTableViewCell.swift */; };
+		54BE456BA582708C1F0A8A2A /* Pods_PlayoCodingTest_PlayoCodingTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5248329CA5E6188148A52388 /* Pods_PlayoCodingTest_PlayoCodingTestUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04A028E71F1D3969E750DC0C /* Pods-PlayoCodingTest-PlayoCodingTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayoCodingTest-PlayoCodingTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-PlayoCodingTest-PlayoCodingTestUITests/Pods-PlayoCodingTest-PlayoCodingTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0B852DC122B5A274EF829174 /* Pods_PlayoCodingTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayoCodingTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE13374377AD8BB48C709CD /* Pods_PlayoCodingTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayoCodingTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		417EBF5327561BF60085ABA7 /* PlayoCodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayoCodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		417EBF5627561BF60085ABA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		417EBF5827561BF60085ABA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +63,12 @@
 		417EBF8927561DF40085ABA7 /* HeadlinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesModel.swift; sourceTree = "<group>"; };
 		417EBF8B27561E360085ABA7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		41C00331275638A9003D5715 /* HeadlinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesTableViewCell.swift; sourceTree = "<group>"; };
+		5248329CA5E6188148A52388 /* Pods_PlayoCodingTest_PlayoCodingTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayoCodingTest_PlayoCodingTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D448F15EDB6906377CE6A7E /* Pods-PlayoCodingTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayoCodingTest.release.xcconfig"; path = "Target Support Files/Pods-PlayoCodingTest/Pods-PlayoCodingTest.release.xcconfig"; sourceTree = "<group>"; };
+		9D909D00DC1AE633C6A6832E /* Pods-PlayoCodingTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayoCodingTestTests.debug.xcconfig"; path = "Target Support Files/Pods-PlayoCodingTestTests/Pods-PlayoCodingTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4379A1D6845355A48E693EC /* Pods-PlayoCodingTest-PlayoCodingTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayoCodingTest-PlayoCodingTestUITests.release.xcconfig"; path = "Target Support Files/Pods-PlayoCodingTest-PlayoCodingTestUITests/Pods-PlayoCodingTest-PlayoCodingTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B912DA0D94D1AC3611787817 /* Pods-PlayoCodingTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayoCodingTestTests.release.xcconfig"; path = "Target Support Files/Pods-PlayoCodingTestTests/Pods-PlayoCodingTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA0719E1028CA41E263C9247 /* Pods-PlayoCodingTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayoCodingTest.debug.xcconfig"; path = "Target Support Files/Pods-PlayoCodingTest/Pods-PlayoCodingTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF369F43A77F05E4D8CC78E /* Pods_PlayoCodingTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4025B83EC1C4F63574C07B5B /* Pods_PlayoCodingTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +92,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BE456BA582708C1F0A8A2A /* Pods_PlayoCodingTest_PlayoCodingTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28C864BE62B6F8C3C2570020 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CE13374377AD8BB48C709CD /* Pods_PlayoCodingTest.framework */,
+				5248329CA5E6188148A52388 /* Pods_PlayoCodingTest_PlayoCodingTestUITests.framework */,
+				0B852DC122B5A274EF829174 /* Pods_PlayoCodingTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		417EBF4A27561BF60085ABA7 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +116,8 @@
 				417EBF6C27561BFB0085ABA7 /* PlayoCodingTestTests */,
 				417EBF7627561BFB0085ABA7 /* PlayoCodingTestUITests */,
 				417EBF5427561BF60085ABA7 /* Products */,
+				86F51366CB39513E961DA2D2 /* Pods */,
+				28C864BE62B6F8C3C2570020 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +174,20 @@
 			path = Headlines;
 			sourceTree = "<group>";
 		};
+		86F51366CB39513E961DA2D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA0719E1028CA41E263C9247 /* Pods-PlayoCodingTest.debug.xcconfig */,
+				5D448F15EDB6906377CE6A7E /* Pods-PlayoCodingTest.release.xcconfig */,
+				04A028E71F1D3969E750DC0C /* Pods-PlayoCodingTest-PlayoCodingTestUITests.debug.xcconfig */,
+				B4379A1D6845355A48E693EC /* Pods-PlayoCodingTest-PlayoCodingTestUITests.release.xcconfig */,
+				9D909D00DC1AE633C6A6832E /* Pods-PlayoCodingTestTests.debug.xcconfig */,
+				B912DA0D94D1AC3611787817 /* Pods-PlayoCodingTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 417EBF7D27561BFB0085ABA7 /* Build configuration list for PBXNativeTarget "PlayoCodingTest" */;
 			buildPhases = (
+				F604847DD9878BA75E1E9A7E /* [CP] Check Pods Manifest.lock */,
 				417EBF4F27561BF60085ABA7 /* Sources */,
 				417EBF5027561BF60085ABA7 /* Frameworks */,
 				417EBF5127561BF60085ABA7 /* Resources */,
+				9F8B7DFA9126CC9BC7EEA74B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 417EBF8027561BFB0085ABA7 /* Build configuration list for PBXNativeTarget "PlayoCodingTestTests" */;
 			buildPhases = (
+				CBBDB1BBFEB1AF74AA4DE8CB /* [CP] Check Pods Manifest.lock */,
 				417EBF6527561BFB0085ABA7 /* Sources */,
 				417EBF6627561BFB0085ABA7 /* Frameworks */,
 				417EBF6727561BFB0085ABA7 /* Resources */,
@@ -189,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 417EBF8327561BFB0085ABA7 /* Build configuration list for PBXNativeTarget "PlayoCodingTestUITests" */;
 			buildPhases = (
+				CCFB0DC519F8D2E5D3B5B52F /* [CP] Check Pods Manifest.lock */,
 				417EBF6F27561BFB0085ABA7 /* Sources */,
 				417EBF7027561BFB0085ABA7 /* Frameworks */,
 				417EBF7127561BFB0085ABA7 /* Resources */,
+				8B0AD5A47E828A2C714FA66A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,6 +318,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B0AD5A47E828A2C714FA66A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayoCodingTest-PlayoCodingTestUITests/Pods-PlayoCodingTest-PlayoCodingTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayoCodingTest-PlayoCodingTestUITests/Pods-PlayoCodingTest-PlayoCodingTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayoCodingTest-PlayoCodingTestUITests/Pods-PlayoCodingTest-PlayoCodingTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F8B7DFA9126CC9BC7EEA74B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayoCodingTest/Pods-PlayoCodingTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayoCodingTest/Pods-PlayoCodingTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayoCodingTest/Pods-PlayoCodingTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBBDB1BBFEB1AF74AA4DE8CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayoCodingTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCFB0DC519F8D2E5D3B5B52F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayoCodingTest-PlayoCodingTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F604847DD9878BA75E1E9A7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayoCodingTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		417EBF4F27561BF60085ABA7 /* Sources */ = {
@@ -458,6 +607,7 @@
 		};
 		417EBF7E27561BFB0085ABA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA0719E1028CA41E263C9247 /* Pods-PlayoCodingTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +636,7 @@
 		};
 		417EBF7F27561BFB0085ABA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D448F15EDB6906377CE6A7E /* Pods-PlayoCodingTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -514,6 +665,7 @@
 		};
 		417EBF8127561BFB0085ABA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D909D00DC1AE633C6A6832E /* Pods-PlayoCodingTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -539,6 +691,7 @@
 		};
 		417EBF8227561BFB0085ABA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B912DA0D94D1AC3611787817 /* Pods-PlayoCodingTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -564,6 +717,7 @@
 		};
 		417EBF8427561BFB0085ABA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A028E71F1D3969E750DC0C /* Pods-PlayoCodingTest-PlayoCodingTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -587,6 +741,7 @@
 		};
 		417EBF8527561BFB0085ABA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4379A1D6845355A48E693EC /* Pods-PlayoCodingTest-PlayoCodingTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

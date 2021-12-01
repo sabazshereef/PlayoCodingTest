@@ -11,6 +11,7 @@ import Foundation
 final class NetworkManager {
     
     static let shared = NetworkManager()
+   
     enum errors : Error {
         case InvalidUrl
         case NoData
@@ -30,7 +31,6 @@ final class NetworkManager {
                 completion(.failure(errors.NoData))
                 return
             }
-           
             do {
                 
                 let decoder = JSONDecoder()

@@ -9,25 +9,68 @@ import XCTest
 @testable import PlayoCodingTest
 
 class PlayoCodingTestTests: XCTestCase {
+    
+    var articles = [Article]()
+    let viewModel = HeadlinesViewModel()
+    private var tableVC: HeadlinesViewController!
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    override func setUp() {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        tableVC = storyboard.instantiateViewController(withIdentifier: "HeadlinesViewController") as? HeadlinesViewController
+        // Trigger view load and viewDidLoad()
+        _ = tableVC.view
     }
+    
+    func testHasATable() {
+        XCTAssertNotNil(tableVC.headlinesTableView)
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testTableViewHasDelegate() {
+        XCTAssertNotNil(tableVC.headlinesTableView.delegate)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testTableViewHasDataSource() {
+        XCTAssertNotNil(tableVC.headlinesTableView.dataSource)
+    }
+    
+    func testTableViewConformsToTableViewDataSourceProtocol() {
+        XCTAssertTrue(tableVC.conforms(to: UITableViewDataSource.self))
+        XCTAssertTrue(tableVC.responds(to: #selector(tableVC.tableView(_:numberOfRowsInSection:))))
+        XCTAssertTrue(tableVC.responds(to: #selector(tableVC.tableView(_:cellForRowAt:))))
+    }
+    
+//    func testTableViewCellHasReuseIdentifier() {
+//        let cell = tableVC.tableView(tableVC.headlinesTableView, cellForRowAt: IndexPath(row: 1, section: 0)) as? HeadlinesTableViewCell
+//        let actualReuseIdentifer = cell?.reuseIdentifier
+//        let expectedReuseIdentifier = "cell"
+//        XCTAssertEqual(actualReuseIdentifer, expectedReuseIdentifier)
+//    }
+    
+    func testHeadlinesData(){
+        let exp = expectation(description: "Waiting for Api to complete.")
+        MockApi.shared.getHedalinesData( expecting: Headlines.self) {  result in
+            switch result{
+                
+            case .success(let result):
+                XCTAssertNotNil(result)
+                self.articles = result.articles
+                exp.fulfill()
+            case .failure(let error):
+                XCTAssertNil(error)
+                XCTFail()
+                
+            }
         }
+        wait(for: [exp], timeout: 10.0)
     }
-
+    
+    func testresultCount(){
+        let count = viewModel.resultCount()
+        XCTAssertNotNil(count)
+        
+        
+    }
+    
 }

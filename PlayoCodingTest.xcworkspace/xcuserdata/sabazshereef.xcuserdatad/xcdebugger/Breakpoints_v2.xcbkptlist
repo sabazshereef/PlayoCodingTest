@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "639C26E9-8801-43CA-AFBE-B9254D3C8E53"
-            shouldBeEnabled = "No"
+            uuid = "FF9E55A1-89E3-44B1-9649-86CEACED88E1"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PlayoCodingTest/Headlines/HeadlinesViewModel.swift"
+            filePath = "PlayoCodingTest/Headlines/HeadlinesViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "getNewsData()"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "refreshTable()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

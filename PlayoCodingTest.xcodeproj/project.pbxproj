@@ -22,6 +22,10 @@
 		417EBF8A27561DF40085ABA7 /* HeadlinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBF8927561DF40085ABA7 /* HeadlinesModel.swift */; };
 		417EBF8C27561E360085ABA7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417EBF8B27561E360085ABA7 /* NetworkManager.swift */; };
 		41C00332275638A9003D5715 /* HeadlinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C00331275638A9003D5715 /* HeadlinesTableViewCell.swift */; };
+		41C39115275735AF0018BF60 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C39114275735AF0018BF60 /* extensions.swift */; };
+		41C39117275737330018BF60 /* MockApiResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 41C39116275737330018BF60 /* MockApiResponse.json */; };
+		41C39119275739580018BF60 /* MockApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C39118275739580018BF60 /* MockApi.swift */; };
+		41C3911B275750220018BF60 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C3911A275750220018BF60 /* Constants.swift */; };
 		54BE456BA582708C1F0A8A2A /* Pods_PlayoCodingTest_PlayoCodingTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5248329CA5E6188148A52388 /* Pods_PlayoCodingTest_PlayoCodingTestUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +67,10 @@
 		417EBF8927561DF40085ABA7 /* HeadlinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesModel.swift; sourceTree = "<group>"; };
 		417EBF8B27561E360085ABA7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		41C00331275638A9003D5715 /* HeadlinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesTableViewCell.swift; sourceTree = "<group>"; };
+		41C39114275735AF0018BF60 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		41C39116275737330018BF60 /* MockApiResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockApiResponse.json; sourceTree = "<group>"; };
+		41C39118275739580018BF60 /* MockApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockApi.swift; sourceTree = "<group>"; };
+		41C3911A275750220018BF60 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5248329CA5E6188148A52388 /* Pods_PlayoCodingTest_PlayoCodingTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayoCodingTest_PlayoCodingTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D448F15EDB6906377CE6A7E /* Pods-PlayoCodingTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayoCodingTest.release.xcconfig"; path = "Target Support Files/Pods-PlayoCodingTest/Pods-PlayoCodingTest.release.xcconfig"; sourceTree = "<group>"; };
 		9D909D00DC1AE633C6A6832E /* Pods-PlayoCodingTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayoCodingTestTests.debug.xcconfig"; path = "Target Support Files/Pods-PlayoCodingTestTests/Pods-PlayoCodingTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,12 +142,15 @@
 		417EBF5527561BF60085ABA7 /* PlayoCodingTest */ = {
 			isa = PBXGroup;
 			children = (
-				417EBF8627561D790085ABA7 /* Headlines */,
-				417EBF5627561BF60085ABA7 /* AppDelegate.swift */,
 				417EBF5827561BF60085ABA7 /* SceneDelegate.swift */,
+				417EBF5627561BF60085ABA7 /* AppDelegate.swift */,
+				417EBF8B27561E360085ABA7 /* NetworkManager.swift */,
+				41C39114275735AF0018BF60 /* extensions.swift */,
+				417EBF8627561D790085ABA7 /* Headlines */,
 				417EBF5F27561BFA0085ABA7 /* Assets.xcassets */,
 				417EBF6127561BFA0085ABA7 /* LaunchScreen.storyboard */,
 				417EBF6427561BFA0085ABA7 /* Info.plist */,
+				41C3911A275750220018BF60 /* Constants.swift */,
 			);
 			path = PlayoCodingTest;
 			sourceTree = "<group>";
@@ -147,7 +158,9 @@
 		417EBF6C27561BFB0085ABA7 /* PlayoCodingTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				41C39118275739580018BF60 /* MockApi.swift */,
 				417EBF6D27561BFB0085ABA7 /* PlayoCodingTestTests.swift */,
+				41C39116275737330018BF60 /* MockApiResponse.json */,
 			);
 			path = PlayoCodingTestTests;
 			sourceTree = "<group>";
@@ -164,12 +177,11 @@
 		417EBF8627561D790085ABA7 /* Headlines */ = {
 			isa = PBXGroup;
 			children = (
-				417EBF8B27561E360085ABA7 /* NetworkManager.swift */,
 				417EBF8927561DF40085ABA7 /* HeadlinesModel.swift */,
 				417EBF8727561DCA0085ABA7 /* HeadlinesViewModel.swift */,
 				417EBF5A27561BF60085ABA7 /* HeadlinesViewController.swift */,
-				417EBF5C27561BF60085ABA7 /* Main.storyboard */,
 				41C00331275638A9003D5715 /* HeadlinesTableViewCell.swift */,
+				417EBF5C27561BF60085ABA7 /* Main.storyboard */,
 			);
 			path = Headlines;
 			sourceTree = "<group>";
@@ -184,7 +196,6 @@
 				9D909D00DC1AE633C6A6832E /* Pods-PlayoCodingTestTests.debug.xcconfig */,
 				B912DA0D94D1AC3611787817 /* Pods-PlayoCodingTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -307,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C39117275737330018BF60 /* MockApiResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,10 +442,12 @@
 				417EBF8C27561E360085ABA7 /* NetworkManager.swift in Sources */,
 				417EBF8A27561DF40085ABA7 /* HeadlinesModel.swift in Sources */,
 				417EBF8827561DCA0085ABA7 /* HeadlinesViewModel.swift in Sources */,
+				41C39115275735AF0018BF60 /* extensions.swift in Sources */,
 				417EBF5B27561BF60085ABA7 /* HeadlinesViewController.swift in Sources */,
 				417EBF5727561BF60085ABA7 /* AppDelegate.swift in Sources */,
 				417EBF5927561BF60085ABA7 /* SceneDelegate.swift in Sources */,
 				41C00332275638A9003D5715 /* HeadlinesTableViewCell.swift in Sources */,
+				41C3911B275750220018BF60 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C39119275739580018BF60 /* MockApi.swift in Sources */,
 				417EBF6E27561BFB0085ABA7 /* PlayoCodingTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
